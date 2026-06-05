@@ -1,0 +1,1 @@
+console.log("NVIP System Online");
