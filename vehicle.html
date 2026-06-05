@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVIP Law Enforcement Terminal</title>
+
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>NVIP LAW ENFORCEMENT TERMINAL</h1>
+    <p>Authorised Access Simulation</p>
+  </header>
+
+  <main>
+
+    <section id="status">
+      <h2>STATUS</h2>
+      <p id="status-text">Loading...</p>
+    </section>
+
+    <section id="vehicle-details">
+      <h2>Vehicle Information</h2>
+
+      <p><strong>Registration:</strong> <span id="registration"></span></p>
+      <p><strong>Make:</strong> <span id="make"></span></p>
+      <p><strong>Year:</strong> <span id="year"></span></p>
+      <p><strong>Colour:</strong> <span id="colour"></span></p>
+    </section>
+
+    <section id="owner-details">
+      <h2>Owner Information</h2>
+
+      <p><strong>Owner:</strong> <span id="owner"></span></p>
+    </section>
+
+    <section id="insurance">
+      <h2>Insurance Status</h2>
+
+      <p><strong>Status:</strong> <span id="insurance-status"></span></p>
+    </section>
+
+    <section id="fines">
+      <h2>Outstanding Fines</h2>
+
+      <p><span id="fines-status"></span></p>
+    </section>
+
+    <section id="legal">
+      <h2>Legal Status</h2>
+
+      <p><span id="legal-status"></span></p>
+    </section>
+
+    <section id="action">
+      <h2>Officer Action</h2>
+
+      <p id="action-text"></p>
+    </section>
+
+    <br>
+
+    <a href="index.html">
+      <button>Return to NVIP Home</button>
+    </a>
+
+  </main>
+
+  <script src="js/vehicles.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>
