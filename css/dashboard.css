@@ -66,3 +66,48 @@ button:hover {
     font-weight: bold;
     margin-top: 15px;
 }
+
+.terminal-info {
+    margin-top: 20px;
+}
+
+.terminal-info p {
+    margin: 5px 0;
+    color: #b0b8c2;
+}
+
+#status {
+    text-align: center;
+    border: 3px solid #4fc3f7;
+}
+
+#status-text {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0;
+}
+
+.status-clear {
+    border: 3px solid #00c853 !important;
+}
+
+.status-investigate {
+    border: 3px solid #ff9800 !important;
+}
+
+.status-priority {
+    border: 3px solid #f44336 !important;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.label {
+    font-weight: bold;
+    color: #4fc3f7;
+} 
