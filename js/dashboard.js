@@ -51,3 +51,23 @@ else if (vehicle.status.includes("HIGH PRIORITY")) {
         "Reported stolen vehicle. Immediate investigation required.";
 
 }
+
+function updateDateTime() {
+
+  const now = new Date();
+
+  document.getElementById("current-date").textContent =
+  now.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  });
+
+  document.getElementById("current-time").textContent =
+    now.toLocaleTimeString();
+
+}
+
+updateDateTime();
+
+setInterval(updateDateTime, 1000);
