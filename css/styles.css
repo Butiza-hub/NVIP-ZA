@@ -201,3 +201,62 @@ footer {
   font-weight: bold;
   color: #4fc3f7;
 }
+
+/* =====================
+   Hero Enhancement
+===================== */
+
+#hero {
+  text-align: center;
+  padding: 140px 40px;
+}
+
+.hero-tagline {
+  color: #4fc3f7;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  max-width: 900px;
+  margin: 0 auto 35px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d0d7de;
+}
+
+/* =====================
+   Benefits Section
+===================== */
+
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.benefit-card {
+  flex: 1;
+  min-width: 250px;
+
+  background-color: #1b1f24;
+
+  border: 1px solid #46515f;
+
+  border-radius: 10px;
+
+  padding: 25px;
+}
+
+.benefit-card h3 {
+  color: #4fc3f7;
+  margin-bottom: 15px;
+}
