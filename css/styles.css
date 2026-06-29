@@ -260,3 +260,61 @@ footer {
   color: #4fc3f7;
   margin-bottom: 15px;
 }
+
+/* =====================
+   Smart Back To Top Button
+===================== */
+
+.back-to-top {
+
+    position: fixed;
+
+    bottom: 30px;
+
+    right: 30px;
+
+    background: #4fc3f7;
+
+    color: #12161c;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 14px 18px;
+
+    border-radius: 50px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,.35);
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        background-color .35s ease;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    z-index: 999;
+}
+
+.back-to-top.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+.back-to-top:hover {
+
+    background: #67d4ff;
+
+    transform: translateY(-5px);
+
+}
