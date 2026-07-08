@@ -318,3 +318,11 @@ footer {
     transform: translateY(-5px);
 
 }
+
+.section-subtitle {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4fc3f7;
+    font-size: 1.8rem;
+}
