@@ -104,3 +104,45 @@ NVIP-ZA/
 ```
 
 ---
+
+## 📸 Visual Walkthrough
+
+### 🏠 1. Landing Page
+
+The landing page introduces the National Vehicle Identification Program (NVIP-ZA), providing visitors with an overview of the project, its objectives, and access to the interactive demonstration.
+
+![Landing Page](images/screenshots/01-landing-page.png)
+
+---
+
+### 🚔 2. Interactive Demonstration
+
+Visitors can select from three simulated vehicle records, each representing a different law enforcement scenario. This demonstrates how officers would access vehicle information through the NVIP system.
+
+![Interactive Demonstration](images/screenshots/02-interactive-demo.png)
+
+---
+
+### 🟢 3. Vehicle Record – CLEAR
+
+A normal vehicle record displaying valid registration, active insurance, no outstanding fines, and no enforcement action required.
+
+![Clear Status Dashboard](images/screenshots/03-clear-status-dashboard.png)
+
+---
+
+### 🟠 4. Vehicle Record – INVESTIGATE
+
+An example vehicle requiring additional verification due to compliance concerns. Officers are advised to conduct further investigation.
+
+![Investigate Dashboard](images/screenshots/04-investigate-dashboard.png)
+
+---
+
+### 🔴 5. Vehicle Record – HIGH PRIORITY
+
+A high-priority enforcement scenario demonstrating how the system highlights serious alerts requiring immediate law enforcement attention.
+
+![High Priority Dashboard](images/screenshots/05-high-priority-dashboard.png)
+
+---
