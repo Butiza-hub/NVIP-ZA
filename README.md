@@ -39,3 +39,68 @@ Although this version is currently a front-end demonstration, the project has be
 This provides the intended user experience by simulating how a traffic officer could scan a vehicle's QR code to access its digital record.
 
 ---
+
+## ✨ Current Capabilities
+
+- 🚔 Interactive law enforcement simulation
+- 📱 QR-code vehicle demonstration workflow
+- 🚗 Three simulated vehicle records
+- 🟢 Dynamic status indicators (Clear, Investigate, High Priority)
+- 📄 Vehicle information dashboard
+- 👤 Owner information display
+- 🛡 Insurance status verification
+- ⚖ Outstanding fines overview
+- 🚨 Enforcement action recommendations
+- 🕒 Live date and time display
+- ⬆ Floating "Back to Top" navigation
+- 📱 Responsive design for desktop and mobile devices
+
+---
+
+## 🛠 Technology Stack
+
+### Front-End
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+### Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- GitHub Pages
+
+---
+
+## 📂 Project Structure
+
+```
+NVIP-ZA/
+│
+├── css/
+│   ├── dashboard.css
+│   ├── responsive.css
+│   └── styles.css
+│
+├── images/
+│   ├── hero/
+│   ├── icons/
+│   ├── qr/
+│   ├── screenshots/
+│   └── vehicles/
+│
+├── js/
+│   ├── app.js
+│   ├── dashboard.js
+│   ├── main.js
+│   ├── qr.js
+│   └── vehicles.js
+│
+├── index.html
+├── vehicle.html
+└── README.md
+```
+
+---
