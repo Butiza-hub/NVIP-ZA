@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NVIP Patrol Beacon Monitor</title>
+
+  <link rel="stylesheet" href="css/patrol.css">
+</head>
+
+<body>
+
+  <main class="patrol-container">
+
+    <!-- Patrol Header -->
+    <header class="patrol-header">
+
+      <h1>NVIP PATROL BEACON MONITOR</h1>
+
+      <p>Authorised Access Simulation</p>
+
+    </header>
+
+
+    <!-- Beacon System -->
+    <section class="beacon-panel">
+
+      <h2>BEACON SYSTEM</h2>
+
+      <p class="system-status">
+        ● MONITORING
+      </p>
+
+      <div class="tracking-status">
+
+        <h3>🎯 TARGET TRACKING MODE</h3>
+
+        <p class="tracking-active">
+          ACTIVE
+        </p>
+
+      </div>
+
+    </section>
+
+
+      <!-- Patrol Monitor Feed -->
+  <section class="monitor-panel">
+
+    <h2>ONCOMING VEHICLE IDENTIFICATION</h2>
+
+    <p class="monitor-instruction">
+      Select a vehicle to activate Target Tracking Mode.
+    </p>
+
+    <div class="monitor-feed">
+
+      <img
+        src="images/patrol/patrol-target-tracking.png"
+        alt="Patrol vehicle monitor view showing approaching traffic"
+        class="patrol-feed-image"
+      >
+
+    <button
+      class="vehicle-target target-hilux"
+      data-vehicle-id="1"
+      aria-label="Select Toyota Hilux">
+    </button>
+
+    <button
+      class="vehicle-target target-polo"
+      data-vehicle-id="2"
+      aria-label="Select Volkswagen Polo Vivo">
+    </button>
+
+    <button
+      class="vehicle-target target-ranger"
+      data-vehicle-id="3"
+      aria-label="Select Ford Ranger">
+    </button>
+
+    </div>
+
+  </section>
+
+
+    <!-- System Status -->
+    <section class="system-panel">
+
+      <h2>SYSTEM STATUS</h2>
+
+      <p class="status-message">
+        NORMAL
+      </p>
+
+      <p>
+        No alert detected
+      </p>
+
+    </section>
+
+  </main>
+
+<script src="js/patrol.js"></script>
+
+</body>
+</html>

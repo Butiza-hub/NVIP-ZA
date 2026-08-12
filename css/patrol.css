@@ -1,0 +1,157 @@
+/* ================================
+   NVIP PATROL BEACON MONITOR
+   ================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0f14;
+  color: #e6edf3;
+  min-height: 100vh;
+}
+
+.patrol-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+/* Header */
+
+.patrol-header {
+  background: #111820;
+  border: 1px solid #263442;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.patrol-header h1 {
+  color: #35c7ff;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.patrol-header p {
+  color: #9aa7b4;
+}
+
+/* Panels */
+
+.beacon-panel,
+.vehicle-panel,
+.system-panel {
+  background: #111820;
+  border: 1px solid #263442;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.beacon-panel h2,
+.vehicle-panel h2,
+.system-panel h2 {
+  color: #35c7ff;
+  margin-bottom: 18px;
+}
+
+/* Monitoring status */
+
+.system-status {
+  color: #45e06f;
+  font-weight: bold;
+}
+
+/* Vehicle information */
+
+.vehicle-info {
+  margin-bottom: 20px;
+}
+
+.vehicle-info p {
+  margin-bottom: 10px;
+}
+
+.status-clear {
+  color: #45e06f;
+  font-weight: bold;
+}
+
+/* Scan button */
+
+.scan-button {
+  background: #35c7ff;
+  color: #071018;
+  border: none;
+  padding: 12px 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.scan-button:hover {
+  opacity: 0.85;
+}
+
+/* System status */
+
+.status-message {
+  color: #45e06f;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Target Tracking Mode */
+
+.tracking-status {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #263442;
+}
+
+.tracking-status h3 {
+  color: #e6edf3;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tracking-active {
+  color: #45e06f;
+  font-weight: bold;
+}
+
+/* Patrol Monitor Feed */
+
+.monitor-panel {
+  background: #111820;
+  border: 1px solid #263442;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.monitor-panel h2 {
+  color: #35c7ff;
+  margin-bottom: 10px;
+}
+
+.monitor-instruction {
+  color: #9aa7b4;
+  margin-bottom: 20px;
+}
+
+.monitor-feed {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #263442;
+  background: #000;
+}
+
+.patrol-feed-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
