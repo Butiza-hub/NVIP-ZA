@@ -34,13 +34,46 @@
 
       <div class="tracking-status">
 
-        <h3>🎯 TARGET TRACKING MODE</h3>
+  <h3>🎯 TARGET TRACKING MODE</h3>
 
-        <p class="tracking-active">
-          ACTIVE
-        </p>
+  <p class="tracking-active" id="tracking-status">
+    STANDBY
+  </p>
 
-      </div>
+  <p id="tracking-vehicle">
+    Select a vehicle to begin tracking.
+  </p>
+
+  <div class="vehicle-information" id="vehicle-information">
+
+    <p>
+      <strong>Registration:</strong>
+      <span id="vehicle-registration">—</span>
+    </p>
+
+    <p>
+      <strong>Make:</strong>
+      <span id="vehicle-make">—</span>
+    </p>
+
+    <p>
+      <strong>Year:</strong>
+      <span id="vehicle-year">—</span>
+    </p>
+
+    <p>
+      <strong>Colour:</strong>
+      <span id="vehicle-colour">—</span>
+    </p>
+
+    <p>
+      <strong>Owner:</strong>
+      <span id="vehicle-owner">—</span>
+    </p>
+
+  </div>
+
+</div>
 
     </section>
 
@@ -102,7 +135,9 @@
 
   </main>
 
-<script src="js/patrol.js"></script>
+  <script src="js/vehicles.js"></script>
+  <script src="js/patrol.js"></script>
 
 </body>
+
 </html>

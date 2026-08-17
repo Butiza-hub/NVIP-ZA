@@ -155,3 +155,44 @@ body {
   width: 100%;
   height: auto;
 }
+
+/* Vehicle Target Zones */
+
+.monitor-feed {
+  position: relative;
+}
+
+.vehicle-target {
+  position: absolute;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Toyota Hilux */
+
+.target-hilux {
+  left: 24%;
+  top: 37%;
+  width: 18%;
+  height: 28%;
+}
+
+/* Volkswagen Polo Vivo */
+
+.target-polo {
+  left: 45%;
+  top: 41%;
+  width: 17%;
+  height: 27%;
+}
+
+/* Ford Ranger */
+
+.target-ranger {
+  left: 67%;
+  top: 39%;
+  width: 19%;
+  height: 29%;
+}
