@@ -1,124 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>NVIP Patrol Beacon Monitor</title>
 
   <link rel="stylesheet" href="css/patrol.css">
+
 </head>
+
 
 <body>
 
   <main class="patrol-container">
 
-    <!-- Patrol Header -->
+  <a href="index.html" class="back-home">
+      ← Back to NVIP Home
+  </a>
+
+
+    <!-- =================================
+         PATROL HEADER
+    ================================== -->
+
     <header class="patrol-header">
 
       <h1>NVIP PATROL BEACON MONITOR</h1>
 
-      <p>Authorised Access Simulation</p>
+      <p>
+        Real-time simulated vehicle identification and beacon monitoring
+        for authorised law-enforcement personnel.
+      </p>
 
     </header>
 
 
-    <!-- Beacon System -->
-    <section class="beacon-panel">
+    <!-- =================================
+         SYSTEM STATUS
+    ================================== -->
 
-      <h2>BEACON SYSTEM</h2>
-
-      <p class="system-status">
-        ● MONITORING
-      </p>
-
-      <div class="tracking-status">
-
-  <h3>🎯 TARGET TRACKING MODE</h3>
-
-  <p class="tracking-active" id="tracking-status">
-    STANDBY
-  </p>
-
-  <p id="tracking-vehicle">
-    Select a vehicle to begin tracking.
-  </p>
-
-  <div class="vehicle-information" id="vehicle-information">
-
-    <p>
-      <strong>Registration:</strong>
-      <span id="vehicle-registration">—</span>
-    </p>
-
-    <p>
-      <strong>Make:</strong>
-      <span id="vehicle-make">—</span>
-    </p>
-
-    <p>
-      <strong>Year:</strong>
-      <span id="vehicle-year">—</span>
-    </p>
-
-    <p>
-      <strong>Colour:</strong>
-      <span id="vehicle-colour">—</span>
-    </p>
-
-    <p>
-      <strong>Owner:</strong>
-      <span id="vehicle-owner">—</span>
-    </p>
-
-  </div>
-
-</div>
-
-    </section>
-
-
-      <!-- Patrol Monitor Feed -->
-  <section class="monitor-panel">
-
-    <h2>ONCOMING VEHICLE IDENTIFICATION</h2>
-
-    <p class="monitor-instruction">
-      Select a vehicle to activate Target Tracking Mode.
-    </p>
-
-    <div class="monitor-feed">
-
-      <img
-        src="images/patrol/patrol-target-tracking.png"
-        alt="Patrol vehicle monitor view showing approaching traffic"
-        class="patrol-feed-image"
-      >
-
-    <button
-      class="vehicle-target target-hilux"
-      data-vehicle-id="1"
-      aria-label="Select Toyota Hilux">
-    </button>
-
-    <button
-      class="vehicle-target target-polo"
-      data-vehicle-id="2"
-      aria-label="Select Volkswagen Polo Vivo">
-    </button>
-
-    <button
-      class="vehicle-target target-ranger"
-      data-vehicle-id="3"
-      aria-label="Select Ford Ranger">
-    </button>
-
-    </div>
-
-  </section>
-
-
-    <!-- System Status -->
     <section class="system-panel">
 
       <h2>SYSTEM STATUS</h2>
@@ -127,13 +50,203 @@
         NORMAL
       </p>
 
-      <p>
+      <p id="system-alert-detail">
         No alert detected
       </p>
 
     </section>
 
+
+    <!-- =================================
+         MAIN PATROL CONSOLE
+    ================================== -->
+
+    <div class="patrol-console">
+
+
+      <!-- =================================
+           LEFT — BEACON SYSTEM
+      ================================== -->
+
+      <section class="beacon-panel">
+
+        <h2>BEACON SYSTEM</h2>
+
+        <p class="system-status">
+          ● MONITORING
+        </p>
+
+
+        <div class="tracking-status">
+
+          <h3>🎯 TARGET TRACKING MODE</h3>
+
+          <p class="tracking-active" id="tracking-status">
+            STANDBY
+          </p>
+
+          <p id="tracking-vehicle">
+            Select a vehicle to begin tracking.
+          </p>
+
+
+          <div
+            class="vehicle-information"
+            id="vehicle-information"
+          >
+
+            <p>
+              <strong>Registration:</strong>
+              <span id="vehicle-registration">—</span>
+            </p>
+
+            <p>
+              <strong>Make:</strong>
+              <span id="vehicle-make">—</span>
+            </p>
+
+            <p>
+              <strong>Year:</strong>
+              <span id="vehicle-year">—</span>
+            </p>
+
+            <p>
+              <strong>Colour:</strong>
+              <span id="vehicle-colour">—</span>
+            </p>
+
+            <p>
+              <strong>Owner:</strong>
+              <span id="vehicle-owner">—</span>
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================
+           CENTRE — PATROL MONITOR
+      ================================== -->
+
+      <section class="monitor-panel">
+
+        <h2>ONCOMING VEHICLE IDENTIFICATION</h2>
+
+        <p class="monitor-instruction">
+          Select a vehicle to activate Target Tracking Mode.
+        </p>
+
+
+        <div class="monitor-feed">
+
+          <img
+            src="images/patrol/patrol-target-tracking.png"
+            alt="Patrol vehicle monitor view showing approaching traffic"
+            class="patrol-feed-image"
+          >
+
+
+          <button
+            class="vehicle-target target-hilux"
+            data-vehicle-id="1"
+            aria-label="Select Toyota Hilux">
+          </button>
+
+
+          <button
+            class="vehicle-target target-polo"
+            data-vehicle-id="2"
+            aria-label="Select Volkswagen Polo Vivo">
+          </button>
+
+
+          <button
+            class="vehicle-target target-ranger"
+            data-vehicle-id="3"
+            aria-label="Select Ford Ranger">
+          </button>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================
+           RIGHT — NVIP SYSTEM TELEMETRY
+      ================================== -->
+
+      <aside class="telemetry-panel">
+
+        <h2>NVIP SYSTEM TELEMETRY</h2>
+
+
+        <div class="telemetry-status">
+
+          <p>
+            <strong>SYSTEM</strong>
+            <span class="telemetry-online">
+              ONLINE
+            </span>
+          </p>
+
+
+          <p>
+            <strong>DATABASE</strong>
+            <span>
+              CONNECTED
+            </span>
+          </p>
+
+
+          <p>
+            <strong>BEACON</strong>
+            <span>
+              MONITORING
+            </span>
+          </p>
+
+
+          <p>
+            <strong>TRACKING</strong>
+            <span>
+              READY
+            </span>
+          </p>
+
+        </div>
+
+
+        <div class="terminal-information">
+
+          <h3>TERMINAL</h3>
+
+          <p>
+            SA-JHB-TRF-001
+          </p>
+
+        </div>
+
+        <div class="nvip-badge">
+        <img
+          src="images/branding/nvip-badge.png"
+          alt="NVIP South Africa badge"
+          class="nvip-badge-image"
+        >
+        </div>
+
+      </aside>
+
+
+    </div>
+
+
   </main>
+
 
   <script src="js/vehicles.js"></script>
   <script src="js/patrol.js"></script>

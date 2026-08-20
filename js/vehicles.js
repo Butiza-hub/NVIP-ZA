@@ -3,6 +3,10 @@ const vehicles = {
   1: {
     status: "🟢 CLEAR",
     statusLevel: "clear",
+    beacon: {
+    detected: true,
+    status: "ACTIVE"
+    },
     registration: "NVIP-7843",
     make: "Toyota Hilux",
     year: "2023",
@@ -17,6 +21,10 @@ const vehicles = {
   2: {
     status: "🟠 INVESTIGATE",
     statusLevel: "warning",
+    beacon: {
+    detected: true,
+    status: "ACTIVE"
+    },
     registration: "NVIP-4521",
     make: "Volkswagen Polo Vivo",
     year: "2021",
@@ -31,6 +39,10 @@ const vehicles = {
   3: {
     status: "🔴 HIGH PRIORITY",
     statusLevel: "critical",
+    beacon: {
+    detected: true,
+    status: "ACTIVE"
+    },
     registration: "NVIP-1189",
     make: "Ford Ranger",
     year: "2024",

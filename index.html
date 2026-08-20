@@ -22,484 +22,627 @@
         <li><a href="#problem">Problem</a></li>
         <li><a href="#solution">Solution</a></li>
         <li><a href="#workflow">How It Works</a></li>
-        <li><a href="#demo">Demo</a></li>
+
+        <!-- Demo Dropdown -->
+        <li class="nav-dropdown">
+          <details>
+            <summary>Demo</summary>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#demo">
+                  QR Code Scan
+                </a>
+              </li>
+
+              <li>
+                <a href="patrol.html">
+                  Beacon Monitor
+                </a>
+              </li>
+            </ul>
+          </details>
+        </li>
+
         <li><a href="#technology">Technology</a></li>
         <li><a href="#future">Future</a></li>
       </ul>
     </nav>
   </header>
 
+
   <!-- Hero -->
-<section id="hero">
+  <section id="hero">
 
-  <div class="official-badge">
-
-  <span class="badge-title">
-    OFFICIAL SYSTEM DEMONSTRATION
-  </span>
-
-  <span class="badge-subtitle">
-    Law Enforcement Simulation
-  </span>
-
-</div>
-
-  <p class="hero-tagline">
-    Secure • Digital • Intelligent
-  </p>
-
-  <h1>National Vehicle Identification Program</h1>
-
-  <p class="hero-description">
-    A next-generation vehicle identification system designed
-    to combat vehicle cloning, improve law enforcement
-    efficiency, and centralise vehicle data through secure
-    digital verification.
-  </p>
-
-  <a href="#demo">
-    <button>Try Interactive Demo</button>
-  </a>
-
-    <div class="hero-image">
-    <img
-      src="images/hero/nvip-hero-banner.png"
-      alt="NVIP vehicle identification system demonstration"
-    >
+    <div class="official-badge">
+      <img
+        src="images/branding/nvip-badge.png"
+        alt="NVIP South Africa badge"
+        class="official-badge-image"
+      >
     </div>
 
-</section>
+    <p class="hero-tagline">
+      Secure • Digital • Intelligent
+    </p>
+
+    <h1>National Vehicle Identification Program</h1>
+
+    <p class="hero-description">
+      A next-generation vehicle identification system designed
+      to combat vehicle cloning, improve law enforcement
+      efficiency, and centralise vehicle data through secure
+      digital verification.
+    </p>
+
+
+    <!-- Interactive Demo Choices -->
+
+    <div class="hero-demo">
+
+      <p class="hero-demo-label">
+        TRY INTERACTIVE DEMO
+      </p>
+
+      <div class="hero-demo-actions">
+
+        <a
+          href="#demo"
+          class="hero-demo-button"
+        >
+          QR CODE SCAN
+        </a>
+
+        <a
+          href="patrol.html"
+          class="hero-demo-button hero-demo-button-secondary"
+        >
+          BEACON MONITOR
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-image">
+      <img
+        src="images/hero/nvip-hero-banner.png"
+        alt="NVIP vehicle identification system demonstration"
+      >
+    </div>
+
+  </section>
+
 
   <!-- About -->
   <section id="about">
+
     <h2>About NVIP</h2>
 
-     <p>
-    The National Vehicle Identification Program (NVIP)
-    is a concept for a modern digital vehicle
-    identification system designed to replace
-    traditional number plates with secure QR-based
-    identification technology.
-  </p>
+    <p>
+      The National Vehicle Identification Program (NVIP)
+      is a concept for a modern digital vehicle
+      identification system designed to replace
+      traditional number plates with secure QR-based
+      identification technology.
+    </p>
 
-  <p>
-    By connecting every vehicle to a central
-    digital record, authorised law enforcement
-    officers can instantly verify vehicle
-    ownership, insurance status, legal compliance,
-    and theft reports through a simple scan.
-  </p>
+    <p>
+      By connecting every vehicle to a central
+      digital record, authorised law enforcement
+      officers can instantly verify vehicle
+      ownership, insurance status, legal compliance,
+      and theft reports through a simple scan.
+    </p>
 
-  <p>
-    This portfolio project demonstrates the user
-    interface, workflow, and technical design of
-    such a system using modern web technologies.
-  </p>
+    <p>
+      This portfolio project demonstrates the user
+      interface, workflow, and technical design of
+      such a system using modern web technologies.
+    </p>
+
   </section>
+
 
   <!-- Problem -->
   <section id="problem">
 
-  <h2>The Problem</h2>
+    <h2>The Problem</h2>
 
-  <p>
-    Traditional vehicle registration systems rely
-    on physical number plates that can be copied,
-    altered, or removed. This creates opportunities
-    for vehicle cloning and makes it more difficult
-    for law enforcement agencies to verify vehicle
-    identities quickly and accurately.
-  </p>
+    <p>
+      Traditional vehicle registration systems rely
+      on physical number plates that can be copied,
+      altered, or removed. This creates opportunities
+      for vehicle cloning and makes it more difficult
+      for law enforcement agencies to verify vehicle
+      identities quickly and accurately.
+    </p>
 
-  <div class="problem-container">
+    <div class="problem-container">
 
-    <div class="problem-card">
-      <h3>Plate Cloning</h3>
-      <p>
-        Criminals can duplicate legitimate
-        registration numbers and use them on
-        stolen or unregistered vehicles.
-      </p>
-    </div>
+      <div class="problem-card">
+        <h3>Plate Cloning</h3>
 
-    <div class="problem-card">
-      <h3>Stolen Vehicles</h3>
-      <p>
-        Officers often need to perform manual
-        checks before confirming whether a
-        vehicle has been reported stolen.
-      </p>
-    </div>
+        <p>
+          Criminals can duplicate legitimate
+          registration numbers and use them on
+          stolen or unregistered vehicles.
+        </p>
+      </div>
 
-    <div class="problem-card">
-      <h3>Insurance Compliance</h3>
-      <p>
-        Vehicles without valid insurance may
-        continue operating until they are
-        physically stopped and inspected.
-      </p>
-    </div>
 
-    <div class="problem-card">
-      <h3>Manual Verification</h3>
-      <p>
-        Checking ownership records, fines,
-        and legal status can take valuable
-        time during roadside operations.
-      </p>
-    </div>
+      <div class="problem-card">
+        <h3>Stolen Vehicles</h3>
 
-  </div>
+        <p>
+          Officers often need to perform manual
+          checks before confirming whether a
+          vehicle has been reported stolen.
+        </p>
+      </div>
 
-</section>
 
-<section id="solution">
+      <div class="problem-card">
+        <h3>Insurance Compliance</h3>
 
-  <h2>The Solution</h2>
+        <p>
+          Vehicles without valid insurance may
+          continue operating until they are
+          physically stopped and inspected.
+        </p>
+      </div>
 
-  <p>
-    The National Vehicle Identification Program
-    (NVIP) introduces a modern digital approach
-    to vehicle identification by replacing
-    traditional number plates with secure
-    QR-based technology.
-  </p>
 
-  <p>
-    Instead of relying on visible registration
-    numbers, authorised law enforcement officers
-    can instantly access verified vehicle
-    information through a secure digital scan.
-  </p>
+      <div class="problem-card">
+        <h3>Manual Verification</h3>
 
-  <div class="solution-container">
-
-    <div class="solution-card">
-      <h3>Secure QR Identity</h3>
-      <p>
-        Every vehicle is assigned a unique
-        digital identifier linked to its
-        official record.
-      </p>
-    </div>
-
-    <div class="solution-card">
-      <h3>Instant Verification</h3>
-      <p>
-        Officers can quickly view vehicle
-        ownership, insurance status, and
-        legal compliance information.
-      </p>
-    </div>
-
-    <div class="solution-card">
-      <h3>Centralised Records</h3>
-      <p>
-        Vehicle information is managed
-        through a single national
-        digital database.
-      </p>
-    </div>
-
-    <div class="solution-card">
-      <h3>Automated Alerts</h3>
-      <p>
-        Potential issues such as stolen
-        vehicles or expired insurance
-        can be highlighted immediately.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="workflow">
-
-  <h2>How NVIP Works</h2>
-
-  <p>
-    The National Vehicle Identification Program
-    combines secure digital identification with
-    instant data verification, allowing authorised
-    law enforcement officers to access important
-    vehicle information in seconds.
-  </p>
-
-  <div class="workflow-container">
-
-    <div class="workflow-step">
-      <h3>1. Vehicle Identification</h3>
-      <p>
-        Each registered vehicle is assigned a
-        unique QR code linked to its official
-        digital record.
-      </p>
-    </div>
-
-    <div class="workflow-step">
-      <h3>2. QR Code Scan</h3>
-      <p>
-        An authorised officer scans the QR code
-        using an official mobile device or
-        in-vehicle camera system.
-      </p>
-    </div>
-
-    <div class="workflow-step">
-      <h3>3. Digital Verification</h3>
-      <p>
-        The system retrieves the vehicle's
-        registered information, insurance
-        status, and legal records.
-      </p>
-    </div>
-
-    <div class="workflow-step">
-      <h3>4. Risk Analysis</h3>
-      <p>
-        The information is analysed and any
-        potential issues are highlighted for
-        immediate attention.
-      </p>
-    </div>
-
-    <div class="workflow-step">
-      <h3>5. Officer Dashboard</h3>
-      <p>
-        Results are displayed using a simple
-        colour-coded interface, allowing officers
-        to make quick and informed decisions.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="benefits">
-
-  <h2>Key Benefits</h2>
-
-  <div class="benefits-grid">
-
-    <div class="benefit-card">
-      <h3>Vehicle Cloning Prevention</h3>
-      <p>
-        Secure digital identification helps prevent
-        fraudulent vehicle cloning and identity theft.
-      </p>
-    </div>
-
-    <div class="benefit-card">
-      <h3>Instant Verification</h3>
-      <p>
-        Vehicle information can be verified
-        immediately through authorised scanning.
-      </p>
-    </div>
-
-    <div class="benefit-card">
-      <h3>Improved Enforcement</h3>
-      <p>
-        Officers receive immediate alerts for
-        stolen, uninsured, or non-compliant vehicles.
-      </p>
-    </div>
-
-    <div class="benefit-card">
-      <h3>National Standardisation</h3>
-      <p>
-        A single identification platform can be
-        used across all provinces and departments.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="demo">
-
-  <h2>Interactive Demonstration</h2>
-
-  <p>
-    Experience the National Vehicle Identification
-    Program from the perspective of an authorised
-    law enforcement officer.
-  </p>
-
-  <h3 class="section-subtitle">Demonstration Vehicle Records</h3>
-
-  <p>
-    Select one of the vehicle records below to
-    simulate an official NVIP scan and view the
-    information available to authorised law
-    enforcement officers.
-  </p>
-
-  <p class="demo-tip">
-
-  💡 <strong>Best Experience:</strong>
-  Open NVIP-ZA on a desktop or laptop and scan the QR codes
-  using your smartphone for the full interactive demonstration.
-
-  </p>
-
-  <div class="demo-container">
-
-    <div class="demo-card">
-
-      <h3>Vehicle Record 01</h3>
-
-      <p><strong>Make:</strong> Toyota Hilux</p>
-      <p><strong>Status:</strong> 🟢 CLEAR</p>
-
-      <img class="vehicle-qr" src="images/qr/qr1.png" alt="Toyota Hilux QR Code">
-
-      <br><br>
-
-      <a href="vehicle.html?id=1">
-        <button>Scan Vehicle</button>
-      </a>
+        <p>
+          Checking ownership records, fines,
+          and legal status can take valuable
+          time during roadside operations.
+        </p>
+      </div>
 
     </div>
 
-    <div class="demo-card">
+  </section>
 
-      <h3>Vehicle Record 02</h3>
 
-      <p><strong>Make:</strong> Volkswagen Polo Vivo</p>
-      <p><strong>Status:</strong> 🟠 INVESTIGATE</p>
+  <!-- Solution -->
+  <section id="solution">
 
-      <img class="vehicle-qr" src="images/qr/qr2.png" alt="Volkswagen Polo Vivo QR Code">
+    <h2>The Solution</h2>
 
-      <br><br>
+    <p>
+      The National Vehicle Identification Program
+      (NVIP) introduces a modern digital approach
+      to vehicle identification by replacing
+      traditional number plates with secure
+      QR-based technology.
+    </p>
 
-      <a href="vehicle.html?id=2">
-        <button>Scan Vehicle</button>
-      </a>
+    <p>
+      Instead of relying on visible registration
+      numbers, authorised law enforcement officers
+      can instantly access verified vehicle
+      information through a secure digital scan.
+    </p>
 
-    </div>
+    <div class="solution-container">
 
-    <div class="demo-card">
+      <div class="solution-card">
+        <h3>Secure QR Identity</h3>
 
-      <h3>Vehicle Record 03</h3>
+        <p>
+          Every vehicle is assigned a unique
+          digital identifier linked to its
+          official record.
+        </p>
+      </div>
 
-      <p><strong>Make:</strong> Ford Ranger</p>
-      <p><strong>Status:</strong> 🔴 HIGH PRIORITY</p>
 
-      <img class="vehicle-qr" src="images/qr/qr3.png" alt="Ford Ranger QR Code">
+      <div class="solution-card">
+        <h3>Instant Verification</h3>
 
-      <br><br>
+        <p>
+          Officers can quickly view vehicle
+          ownership, insurance status, and
+          legal compliance information.
+        </p>
+      </div>
 
-      <a href="vehicle.html?id=3">
-        <button>Scan Vehicle</button>
-      </a>
 
-    </div>
+      <div class="solution-card">
+        <h3>Centralised Records</h3>
 
-  </div>
+        <p>
+          Vehicle information is managed
+          through a single national
+          digital database.
+        </p>
+      </div>
 
-</section>
 
-<section id="technology">
+      <div class="solution-card">
+        <h3>Automated Alerts</h3>
 
-  <h2>Technical Design</h2>
-
-  <p>
-  This project demonstrates the concept and user experience of a modern digital vehicle identification system using front-end web technologies.
-  </p>
-
-  <p>
-  The current version focuses on interface design, workflow simulation, and interactive user experiences while establishing a solid foundation for future full-stack development.
-  </p>
-
-  <div class="technology-container">
-
-    <div class="technology-card">
-      <h3>Front-End</h3>
-
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-      </ul>
-
-    </div>
-
-    <div class="technology-card">
-      <h3>Current Capabilities</h3>
-
-      <ul>
-        <li>Interactive QR demonstration</li>
-        <li>Dynamic vehicle dashboard</li>
-        <li>Status indicators</li>
-        <li>Simulated vehicle records</li>
-      </ul>
+        <p>
+          Potential issues such as stolen
+          vehicles or expired insurance
+          can be highlighted immediately.
+        </p>
+      </div>
 
     </div>
 
-    <div class="technology-card">
-      <h3>Future Expansion</h3>
+  </section>
 
-      <ul>
-        <li>Node.js Back-End</li>
-        <li>Database integration</li>
-        <li>Role-based access control</li>
-        <li>Real-time data updates</li>
-      </ul>
+
+  <!-- Workflow -->
+  <section id="workflow">
+
+    <h2>How NVIP Works</h2>
+
+    <p>
+      The National Vehicle Identification Program
+      combines secure digital identification with
+      instant data verification, allowing authorised
+      law enforcement officers to access important
+      vehicle information in seconds.
+    </p>
+
+    <div class="workflow-container">
+
+      <div class="workflow-step">
+        <h3>1. Vehicle Identification</h3>
+
+        <p>
+          Each registered vehicle is assigned a
+          unique QR code linked to its official
+          digital record.
+        </p>
+      </div>
+
+
+      <div class="workflow-step">
+        <h3>2. QR Code Scan</h3>
+
+        <p>
+          An authorised officer scans the QR code
+          using an official mobile device or
+          in-vehicle camera system.
+        </p>
+      </div>
+
+
+      <div class="workflow-step">
+        <h3>3. Digital Verification</h3>
+
+        <p>
+          The system retrieves the vehicle's
+          registered information, insurance
+          status, and legal records.
+        </p>
+      </div>
+
+
+      <div class="workflow-step">
+        <h3>4. Risk Analysis</h3>
+
+        <p>
+          The information is analysed and any
+          potential issues are highlighted for
+          immediate attention.
+        </p>
+      </div>
+
+
+      <div class="workflow-step">
+        <h3>5. Officer Dashboard</h3>
+
+        <p>
+          Results are displayed using a simple
+          colour-coded interface, allowing officers
+          to make quick and informed decisions.
+        </p>
+      </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
 
-<section id="future">
+  <!-- Benefits -->
+  <section id="benefits">
 
-  <h2>Future Vision</h2>
+    <h2>Key Benefits</h2>
 
-  <p>
-    The National Vehicle Identification Program
-    is designed as a scalable concept that could
-    evolve beyond this prototype into a complete
-    digital vehicle management platform.
-  </p>
+    <div class="benefits-grid">
 
-  <p>
-    Future development could include secure
-    backend services, real-time database
-    integration, authorised user authentication,
-    and automated data synchronisation between
-    licensing authorities, insurance providers,
-    and law enforcement agencies.
-  </p>
+      <div class="benefit-card">
+        <h3>Vehicle Cloning Prevention</h3>
 
-  <p>
-    This portfolio project represents the first
-    step toward that vision by demonstrating the
-    user interface, workflow, and technical
-    foundation of such a system.
-  </p>
+        <p>
+          Secure digital identification helps prevent
+          fraudulent vehicle cloning and identity theft.
+        </p>
+      </div>
 
-</section>
 
-<a href="#hero" class="back-to-top" id="backToTop">
+      <div class="benefit-card">
+        <h3>Instant Verification</h3>
+
+        <p>
+          Vehicle information can be verified
+          immediately through authorised scanning.
+        </p>
+      </div>
+
+
+      <div class="benefit-card">
+        <h3>Improved Enforcement</h3>
+
+        <p>
+          Officers receive immediate alerts for
+          stolen, uninsured, or non-compliant vehicles.
+        </p>
+      </div>
+
+
+      <div class="benefit-card">
+        <h3>National Standardisation</h3>
+
+        <p>
+          A single identification platform can be
+          used across all provinces and departments.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Interactive Demonstration -->
+  <section id="demo">
+
+    <h2>Interactive Demonstration</h2>
+
+    <p>
+      Experience the National Vehicle Identification
+      Program from the perspective of an authorised
+      law enforcement officer.
+    </p>
+
+    <h3 class="section-subtitle">
+      Demonstration Vehicle Records
+    </h3>
+
+    <p>
+      Select one of the vehicle records below to
+      simulate an official NVIP scan and view the
+      information available to authorised law
+      enforcement officers.
+    </p>
+
+
+    <p class="demo-tip">
+
+      💡 <strong>Best Experience:</strong>
+      Open NVIP-ZA on a desktop or laptop and scan the QR codes
+      using your smartphone for the full interactive demonstration.
+
+    </p>
+
+
+    <div class="demo-container">
+
+      <div class="demo-card">
+
+        <h3>Vehicle Record 01</h3>
+
+        <p><strong>Make:</strong> Toyota Hilux</p>
+
+        <p>
+          <strong>Status:</strong>
+          🟢 CLEAR
+        </p>
+
+        <img
+          class="vehicle-qr"
+          src="images/qr/qr1.png"
+          alt="Toyota Hilux QR Code"
+        >
+
+        <br><br>
+
+        <a href="vehicle.html?id=1">
+          <button>Scan Vehicle</button>
+        </a>
+
+      </div>
+
+
+      <div class="demo-card">
+
+        <h3>Vehicle Record 02</h3>
+
+        <p><strong>Make:</strong> Volkswagen Polo Vivo</p>
+
+        <p>
+          <strong>Status:</strong>
+          🟠 INVESTIGATE
+        </p>
+
+        <img
+          class="vehicle-qr"
+          src="images/qr/qr2.png"
+          alt="Volkswagen Polo Vivo QR Code"
+        >
+
+        <br><br>
+
+        <a href="vehicle.html?id=2">
+          <button>Scan Vehicle</button>
+        </a>
+
+      </div>
+
+
+      <div class="demo-card">
+
+        <h3>Vehicle Record 03</h3>
+
+        <p><strong>Make:</strong> Ford Ranger</p>
+
+        <p>
+          <strong>Status:</strong>
+          🔴 HIGH PRIORITY
+        </p>
+
+        <img
+          class="vehicle-qr"
+          src="images/qr/qr3.png"
+          alt="Ford Ranger QR Code"
+        >
+
+        <br><br>
+
+        <a href="vehicle.html?id=3">
+          <button>Scan Vehicle</button>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Technology -->
+  <section id="technology">
+
+    <h2>Technical Design</h2>
+
+    <p>
+      This project demonstrates the concept and user experience
+      of a modern digital vehicle identification system using
+      front-end web technologies.
+    </p>
+
+    <p>
+      The current version focuses on interface design,
+      workflow simulation, and interactive user experiences
+      while establishing a solid foundation for future
+      full-stack development.
+    </p>
+
+
+    <div class="technology-container">
+
+      <div class="technology-card">
+
+        <h3>Front-End</h3>
+
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+        </ul>
+
+      </div>
+
+
+      <div class="technology-card">
+
+        <h3>Current Capabilities</h3>
+
+        <ul>
+          <li>Interactive QR demonstration</li>
+          <li>Dynamic vehicle dashboard</li>
+          <li>Status indicators</li>
+          <li>Simulated vehicle records</li>
+        </ul>
+
+      </div>
+
+
+      <div class="technology-card">
+
+        <h3>Future Expansion</h3>
+
+        <ul>
+          <li>Node.js Back-End</li>
+          <li>Database integration</li>
+          <li>Role-based access control</li>
+          <li>Real-time data updates</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Future -->
+  <section id="future">
+
+    <h2>Future Vision</h2>
+
+    <p>
+      The National Vehicle Identification Program
+      is designed as a scalable concept that could
+      evolve beyond this prototype into a complete
+      digital vehicle management platform.
+    </p>
+
+    <p>
+      Future development could include secure
+      backend services, real-time database
+      integration, authorised user authentication,
+      and automated data synchronisation between
+      licensing authorities, insurance providers,
+      and law enforcement agencies.
+    </p>
+
+    <p>
+      This portfolio project represents the first
+      step toward that vision by demonstrating the
+      user interface, workflow, and technical
+      foundation of such a system.
+    </p>
+
+  </section>
+
+
+  <a
+    href="#hero"
+    class="back-to-top"
+    id="backToTop"
+  >
     ↑ Top
-</a>
+  </a>
+
 
   <!-- Footer -->
   <footer>
-    <p>National Vehicle Identification Program (NVIP)</p>
+
     <p>
-    Portfolio Demonstration Project
+      National Vehicle Identification Program (NVIP)
     </p>
 
     <p>
-    Designed & Developed by Daniel Dipeere
+      Portfolio Demonstration Project
     </p>
+
+    <p>
+      Designed & Developed by Daniel Dipeere
+    </p>
+
   </footer>
+
 
   <script src="js/app.js"></script>
   <script src="js/main.js"></script>

@@ -1,12 +1,13 @@
-/* ================================
+/* =================================
    NVIP PATROL BEACON MONITOR
-   ================================ */
+================================= */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   font-family: Arial, sans-serif;
@@ -15,21 +16,27 @@ body {
   min-height: 100vh;
 }
 
+
 .patrol-container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 40px auto;
+  width: 94%;
+  max-width: 1400px;
+  margin: 25px auto;
 }
 
-/* Header */
+
+
+/* =================================
+   PATROL HEADER
+================================= */
 
 .patrol-header {
   background: #111820;
   border: 1px solid #263442;
-  padding: 25px;
+  padding: 22px 25px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
+
 
 .patrol-header h1 {
   color: #35c7ff;
@@ -37,118 +44,185 @@ body {
   margin-bottom: 8px;
 }
 
+
 .patrol-header p {
   color: #9aa7b4;
+  font-size: 14px;
 }
 
-/* Panels */
 
-.beacon-panel,
-.vehicle-panel,
+
+/* =================================
+   SYSTEM STATUS
+================================= */
+
 .system-panel {
   background: #111820;
   border: 1px solid #263442;
-  padding: 25px;
-  margin-bottom: 20px;
+  padding: 18px 25px;
+  margin-bottom: 18px;
+  text-align: center;
+  transition: border-color 0.2s ease;
 }
 
-.beacon-panel h2,
-.vehicle-panel h2,
+
 .system-panel h2 {
   color: #35c7ff;
-  margin-bottom: 18px;
+  font-size: 15px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
 }
 
-/* Monitoring status */
+
+.status-message {
+  color: #45e06f;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+#system-alert-detail {
+  color: #9aa7b4;
+  font-size: 14px;
+}
+
+
+
+/* =================================
+   MAIN PATROL CONSOLE
+================================= */
+
+.patrol-console {
+  display: grid;
+  grid-template-columns: 0.85fr 2fr 0.85fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+
+.beacon-panel,
+.monitor-panel,
+.telemetry-panel {
+  background: #111820;
+  border: 1px solid #263442;
+  padding: 20px;
+}
+
+
+
+/* =================================
+   PANEL HEADINGS
+================================= */
+
+.beacon-panel h2,
+.monitor-panel h2,
+.telemetry-panel h2 {
+  color: #35c7ff;
+  font-size: 16px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+
+
+/* =================================
+   BEACON SYSTEM
+================================= */
 
 .system-status {
   color: #45e06f;
   font-weight: bold;
+  font-size: 14px;
 }
 
-/* Vehicle information */
-
-.vehicle-info {
-  margin-bottom: 20px;
-}
-
-.vehicle-info p {
-  margin-bottom: 10px;
-}
-
-.status-clear {
-  color: #45e06f;
-  font-weight: bold;
-}
-
-/* Scan button */
-
-.scan-button {
-  background: #35c7ff;
-  color: #071018;
-  border: none;
-  padding: 12px 22px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.scan-button:hover {
-  opacity: 0.85;
-}
-
-/* System status */
-
-.status-message {
-  color: #45e06f;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-/* Target Tracking Mode */
 
 .tracking-status {
-  margin-top: 25px;
-  padding-top: 20px;
+  margin-top: 20px;
+  padding-top: 18px;
   border-top: 1px solid #263442;
 }
 
+
 .tracking-status h3 {
   color: #e6edf3;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
+
 
 .tracking-active {
   color: #45e06f;
   font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
-/* Patrol Monitor Feed */
+
+#tracking-vehicle {
+  color: #9aa7b4;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+
+
+/* =================================
+   VEHICLE INFORMATION
+================================= */
+
+.vehicle-information {
+  border-top: 1px solid #263442;
+  padding-top: 15px;
+}
+
+
+.vehicle-information p {
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+
+.vehicle-information strong {
+  display: block;
+  color: #9aa7b4;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+
+.vehicle-information span {
+  color: #e6edf3;
+}
+
+
+
+/* =================================
+   PATROL MONITOR
+================================= */
 
 .monitor-panel {
-  background: #111820;
-  border: 1px solid #263442;
-  padding: 25px;
-  margin-bottom: 20px;
+  min-width: 0;
 }
 
-.monitor-panel h2 {
-  color: #35c7ff;
-  margin-bottom: 10px;
-}
 
 .monitor-instruction {
   color: #9aa7b4;
-  margin-bottom: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
 }
+
 
 .monitor-feed {
   width: 100%;
   overflow: hidden;
+  position: relative;
   border: 1px solid #263442;
   background: #000;
 }
+
 
 .patrol-feed-image {
   display: block;
@@ -156,11 +230,11 @@ body {
   height: auto;
 }
 
-/* Vehicle Target Zones */
 
-.monitor-feed {
-  position: relative;
-}
+
+/* =================================
+   VEHICLE TARGET ZONES
+================================= */
 
 .vehicle-target {
   position: absolute;
@@ -170,7 +244,6 @@ body {
   z-index: 10;
 }
 
-/* Toyota Hilux */
 
 .target-hilux {
   left: 24%;
@@ -179,7 +252,6 @@ body {
   height: 28%;
 }
 
-/* Volkswagen Polo Vivo */
 
 .target-polo {
   left: 45%;
@@ -188,11 +260,199 @@ body {
   height: 27%;
 }
 
-/* Ford Ranger */
 
 .target-ranger {
   left: 67%;
   top: 39%;
   width: 19%;
   height: 29%;
+}
+
+
+
+/* =================================
+   NVIP SYSTEM TELEMETRY
+================================= */
+
+.telemetry-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.telemetry-status {
+  border-top: 1px solid #263442;
+  border-bottom: 1px solid #263442;
+  padding: 15px 0;
+}
+
+
+.telemetry-status p {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 13px;
+  font-size: 11px;
+}
+
+
+.telemetry-status p:last-child {
+  margin-bottom: 0;
+}
+
+
+.telemetry-status strong {
+  color: #9aa7b4;
+}
+
+
+.telemetry-status span {
+  color: #e6edf3;
+  font-weight: bold;
+}
+
+
+.telemetry-online {
+  color: #45e06f !important;
+}
+
+
+
+/* =================================
+   TERMINAL INFORMATION
+================================= */
+
+.terminal-information {
+  margin-top: 20px;
+}
+
+
+.terminal-information h3 {
+  color: #35c7ff;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+
+.terminal-information p {
+  color: #e6edf3;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+/* =================================
+   NVIP BADGE
+================================= */
+
+.nvip-badge {
+  margin-top: auto;
+  padding-top: 25px;
+  text-align: center;
+}
+
+
+.nvip-badge-image {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+/* =================================
+   DYNAMIC SYSTEM STATUS STATES
+================================= */
+
+.system-panel.status-normal {
+  border-color: #45e06f;
+}
+
+
+.system-panel.status-warning {
+  border-color: #f5a623;
+}
+
+
+.system-panel.status-urgent {
+  border-color: #ff3b30;
+}
+
+
+.system-panel.status-no-beacon {
+  border-color: #ff3b30;
+}
+
+
+.system-panel.status-warning .status-message {
+  color: #f5a623;
+}
+
+
+.system-panel.status-urgent .status-message {
+  color: #ff3b30;
+}
+
+
+.system-panel.status-no-beacon .status-message {
+  color: #ff3b30;
+}
+
+
+
+/* =================================
+   RESPONSIVE LAYOUT
+================================= */
+
+@media (max-width: 1000px) {
+
+  .patrol-console {
+    grid-template-columns: 1fr 1.8fr;
+  }
+
+  .telemetry-panel {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .patrol-container {
+    width: 95%;
+    margin: 15px auto;
+  }
+
+  .patrol-console {
+    grid-template-columns: 1fr;
+  }
+
+  .telemetry-panel {
+    grid-column: auto;
+  }
+
+  .patrol-header h1 {
+    font-size: 22px;
+  }
+
+}
+
+/* =================================
+   Back to Home
+================================= */
+
+.back-home {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.back-home:hover {
+  color: #67d4ff;
 }
