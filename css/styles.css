@@ -594,23 +594,99 @@ button:hover {
 
 
 /* =====================
-   Mobile Notice
+   Mobile Device Notice
 ===================== */
 
-.mobile-notice {
-  background: #0f172a;
+.mobile-notice-overlay {
+  position: fixed;
+  inset: 0;
 
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.78);
+
+  z-index: 5000;
+}
+
+
+.mobile-notice-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 520px;
+
+  background: #16232d;
+
+  border: 2px solid #4fc3f7;
+  border-radius: 12px;
+
+  padding: 40px 35px 35px;
 
   text-align: center;
 
-  padding: 15px;
+  box-shadow:
+    0 0 30px rgba(79, 195, 247, 0.35),
+    0 18px 50px rgba(0, 0, 0, 0.65);
+}
 
-  border-bottom: 3px solid #4fc3f7;
 
-  font-size: 0.95rem;
+.mobile-notice-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
 
-  line-height: 1.6;
+
+.mobile-notice-modal h2 {
+  color: #4fc3f7;
+
+  font-size: 1.6rem;
+
+  margin-bottom: 18px;
+}
+
+
+.mobile-notice-modal p {
+  color: #ffffff;
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+.mobile-notice-close {
+  position: absolute;
+
+  top: 10px;
+  right: 14px;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 4px 8px;
+
+  font-size: 1.8rem;
+  line-height: 1;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+}
+
+
+.mobile-notice-close:hover {
+  background: #4fc3f7;
+  color: #12161c;
+  opacity: 1;
 }
 
 
@@ -681,6 +757,105 @@ footer {
 
 
   .hero-demo-button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+}
+
+/* =====================
+   NVIP Vehicle Beacon
+===================== */
+
+.beacon-explainer {
+  max-width: 1200px;
+  margin: 70px auto 0;
+  padding-top: 50px;
+  border-top: 1px solid #46515f;
+  text-align: center;
+}
+
+
+.beacon-explainer-intro {
+  max-width: 850px;
+  margin: 0 auto 30px;
+}
+
+
+.beacon-explainer-intro h3 {
+  color: #4fc3f7;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+
+.beacon-explainer-intro p {
+  color: #d0d7de;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+
+.beacon-location-visual {
+  width: 100%;
+  margin: 35px auto 30px;
+}
+
+
+.beacon-location-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #46515f;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+.beacon-monitor-button {
+  display: inline-block;
+
+  margin-top: 10px;
+  padding: 13px 28px;
+
+  background-color: #4fc3f7;
+  color: #12161c;
+
+  border: 2px solid #4fc3f7;
+  border-radius: 6px;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.beacon-monitor-button:hover {
+  background-color: #67d4ff;
+  border-color: #67d4ff;
+  color: #12161c;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 700px) {
+
+  .beacon-explainer {
+    margin-top: 50px;
+    padding-top: 40px;
+  }
+
+
+  .beacon-explainer-intro h3 {
+    font-size: 1.5rem;
+  }
+
+
+  .beacon-monitor-button {
     width: 100%;
     max-width: 280px;
   }
